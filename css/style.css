@@ -28,6 +28,7 @@ button:focus {
   text-align: left;
   font-size: 16px;
   background-color: #e0dfdf8c;
+  height: 100%;
 }
 .snip1409 *,
 .snip1409 *:after {
@@ -39,6 +40,7 @@ button:focus {
 .snip1409 img {
   backface-visibility: hidden;
   vertical-align: top;
+  height: 100%;
 }
 .snip1409:after {
   position: absolute;
@@ -377,6 +379,9 @@ button:focus {
 }
 .section__desc1{
     padding-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
 }
 .list{
     margin-top: 50px;
