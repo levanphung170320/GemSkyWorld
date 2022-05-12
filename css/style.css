@@ -181,6 +181,12 @@ button:focus {
     height: 100%;
 }
 
+.Form__W h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #0071bc51;
+}
+
 .Form__Block {
     display: flex;
     align-items: center;
@@ -196,7 +202,7 @@ button:focus {
 }
 
 .Form__width {
-    width: 30%;
+    width: 45%;
     margin: 0 auto;
     min-height: 370px;
     background-color: white;
@@ -257,7 +263,7 @@ button:focus {
     left: 0;
     right: 0;
     content: '';
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: #3e4759a0;
     z-index: 1;
     opacity: 0;
 }
@@ -323,19 +329,19 @@ button:focus {
 .fixed__nav {
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: -50px;
     transform: translate(-50%, -50%);
     z-index: 5;
 }
 
 .fixed__nav ul {
     list-style: none;
-    margin: -13px;
+    margin: -10px;
     padding: 0;
 }
 
 .fixed__nav ul li {
-    padding: 12px 15px;
+    padding: 5px 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #0072bc;
@@ -382,7 +388,7 @@ button:focus {
 
 .header__row {
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .menu__child {
@@ -393,7 +399,7 @@ button:focus {
     align-items: center;
     color: white;
     background-color: #0072bc;
-    padding: 7px 10px;
+    padding: 1px 5px;
     border-radius: 5px;
     border: 0;
     cursor: pointer;
@@ -402,7 +408,7 @@ button:focus {
 
 .menu__child {
     position: absolute;
-    top: 64px;
+    top: 60px;
     left: 0;
     right: 0;
     background-color: #0072bc;
@@ -871,6 +877,7 @@ button:focus {
 }
 
 .footer__input {
+    display: flex;
     justify-content: space-between;
     color: white;
     margin: 20px 0;
@@ -1062,8 +1069,22 @@ textarea::placeholder {
 }
 
 .header__logo {
-    padding-left: 40px;
     margin-left: 0px;
+    width: 50%;
+}
+
+.header__logo img {
+    width: 75%;
+}
+
+.header__logos {
+    width: 50%;
+    padding-top: 10px;
+}
+
+.header__logos img {
+    width: 80%;
+    padding-top: 0;
 }
 
 .hotline__title a {
@@ -1109,6 +1130,8 @@ textarea::placeholder {
     overflow: hidden;
     display: flex;
     align-items: center;
+    background-color: #3e4759a0;
+    border-radius: 40px;
 }
 
 .slider__row-rights {
@@ -1183,7 +1206,7 @@ textarea::placeholder {
 .heder__nav-right ul li a {
     text-decoration: none;
     color: #5d6578;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -1207,13 +1230,117 @@ textarea::placeholder {
     display: none;
 }
 
+.right__buttons {
+    display: none;
+}
+
+.slider__left-img {
+    padding: 50px;
+    background-color: #3e4759a0;
+    border-radius: 40px;
+}
+
+.slider__posite-img {
+    display: flex;
+    left: 46%;
+    top: 23%;
+    transform: translate(-68%, -80%);
+    position: absolute;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.slider__posite-img img {
+    width: 40%;
+}
+
+.slider__row-posites {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #5d657885;
+    z-index: 100;
+    width: 100%;
+}
+
+.slider__row-color {
+    background-color: #5d6578;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+    text-align: center;
+    border-radius: 40px;
+    display: block;
+}
+
+.close {
+    display: block;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.close img {
+    width: 30px;
+}
+
+.slider__row-colors {
+    display: none;
+}
+
+
+
 @media (max-width: 768px) {
     .item {
         padding: 40px 0;
     }
 
-    .header__left {
-        width: 100%
+    .footer__input {
+        display: block;
+    }
+
+    .button__home {
+        padding: 10px 20px;
+    }
+
+    .snip1409 img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .header__logos img {
+        width: 100%;
+        padding-top: 7px;
+    }
+
+    .header__logos {
+        width: 50%;
+        padding-top: 0px;
+    }
+
+    .slider__posite-img img {
+        width: 80%;
+    }
+
+    .slider__posite-img {
+        display: flex;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -75%);
+        position: absolute;
+        width: 100%;
+    }
+
+    .slider__left-img {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .right__buttons {
+        display: block;
     }
 
     .menu__wrapper {
@@ -1227,24 +1354,22 @@ textarea::placeholder {
     .slider__row {
         display: initial;
         justify-content: inherit;
+        position: absolute;
+        top: 60%;
     }
 
     .slider__row-left {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
     }
 
     .slider__img {
-        height: 40vh;
-
-    }
-
-    .slider__row-left {
-        margin-top: 40px;
+        min-height: 450px;
+        max-height: 450px;
     }
 
     .slider__row-right {
-        display: none;
+        display: block;
     }
 
     .hotline__title a {
@@ -1255,10 +1380,15 @@ textarea::placeholder {
         color: white;
     }
 
+
+
     .header__logo {
-        padding-left: 0;
-        margin-left: 0px;
-        margin-right: 0px;
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .header__logo img {
+        width: 100%;
     }
 
     .section__title span {
@@ -1341,7 +1471,7 @@ textarea::placeholder {
         position: fixed;
         left: 0;
         right: 0;
-        top: 90px;
+        top: 60px;
     }
 
     .menu__child ul span::after {
@@ -1358,6 +1488,7 @@ textarea::placeholder {
     }
 
     .header__left {
+        width: 50%;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
@@ -1377,11 +1508,11 @@ textarea::placeholder {
 
     .section__title h1 {
         padding-right: 0;
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .text__center h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .section__title span {
@@ -1450,6 +1581,7 @@ textarea::placeholder {
         width: 100%;
         position: relative;
         margin-top: 10px;
+        height: 300px;
     }
 
     .product__item:first-child {

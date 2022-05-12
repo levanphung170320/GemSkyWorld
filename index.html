@@ -3,23 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="Description" CONTENT="">
-    <meta name="google-site-verification" content="" />
-    <meta name="robots" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="shortcut icon" href="https://gemskyworld.vn/Data/Sites/1/skins/default/img/logo.png">
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="shortcut icon" href="images/logo.png">
     <title>Gem Sky World</title>
 </head>
 
@@ -28,18 +25,21 @@
         <div class="Form__fex logindiv">
             <div class="Form__Block">
                 <div class="Form__width">
+
                     <div class="Form__W">
                         <div class="Form__icon">
                             <img class="Form__close" width="20px" src="icon/multiply.svg" alt="">
                         </div>
+                        <h3>Đăng ký nhận báo giá chi tiết và tư vấn</h3>
                         <div class="Form__Row">
+
                             <div>
                                 <img src="https://gemskyworld.vn/Data/Sites/1/skins/default/img/logo.png" alt="">
                             </div>
-                            <div class="From__input">
+                            <div class="From__input ">
                                 <form name="register" action="javascript:void(0)" method="post" class="submit__form">
-                                    <h3>Đăng Ký Nhận Thông Tin</h3>
-                                    <div class=" footer__input ">
+
+                                    <div class=" footer__inputs ">
                                         <div class="form__input">
                                             <input type="text" name="fullname" id="name" placeholder="Họ Và Tên (*)"
                                                 required />
@@ -63,60 +63,96 @@
                 </div>
             </div>
         </div>
+        <div class="slider__row-flex ">
+            <!-- <img class="slider__row-img" src="./images/layer-12ss.png" alt=""> -->
+            <div class="sss slider__row-colors">
+                <div class="close">
+                    <img src="images/times.svg" alt="">
+                </div>
+                <div class="slider__row-from">
+                    <img class="slider__row-rightimg" src="images/0111.png" alt="">
+                    <form name="register" action="javascript:void(0)" method="post" class="submit__form">
+                        <div class=" right__input ">
+                            <div class="right__input-text">
+                                <input type="text" name="fullname" id="name" placeholder="Họ Và Tên (*)" required />
+                                <span id="name_error" class="error"></span>
+                            </div>
+                            <div class="right__input-text">
+                                <input type="text" name="phone" id="phone" placeholder="Phone(*)" required />
+                                <span id="phone_error" class="error"></span>
+                                <span id="phonenumber_error" class="error"></span>
+                            </div>
+                        </div>
+
+                        <div class="right__button">
+                            <button type="submit">
+
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div>
             <div class="header" id="sec1">
                 <div class="container">
                     <div class="header__row uk__flex " id="high1">
-                        <div class="header__left uk__flex ">
-                            <img class="nav_logo" src="images/logo_doc.svg" alt="">
-                            <div class="menu__wrapper uk__flex menu">
-                                <div class="menu__img">
-                                    <img src="icon/align-justify.svg" alt="">
-                                </div>
-                                <div class="menu__title "><span>MENU</span></div>
-                                <div class="menu__child">
-                                    <ul>
-                                        <span></span>
-                                        <li>
-                                            <div class="right__flex uk__flex">
-                                                <div class="hotline__wrapper uk__flex">
-                                                    <div class="hotline__icon"><img src="icon/outgoing-call.svg" alt="">
-                                                    </div>
-                                                    <div class="hotline__title"><span><a
-                                                                href="tel:+0932657979">0932657979</a></span></div>
+                        <div class="menu__wrapper uk__flex menu">
+                            <div class="menu__img">
+                                <img src="icon/align-justify.svg" alt="">
+                            </div>
+                            <div class="menu__title "><span>MENU</span></div>
+                            <div class="menu__child">
+                                <ul id="navbar-example2">
+                                    <span></span>
+                                    <li>
+                                        <div class="right__flex uk__flex">
+                                            <div class="hotline__wrapper uk__flex">
+                                                <div class="hotline__icon"><img src="icon/outgoing-call.svg" alt="">
                                                 </div>
-                                                <!-- <div class="right__img">
-                                                    <a href="#"><img
-                                                            src="https://gemskyworld.vn/Data/Sites/1/skins/default/img/360-icon.png"
-                                                            alt=""></a>
-                                                </div> -->
-                                                <!-- <div class="search__wrapper search searchmb">
-                                                    <img src="icon/search.svg" alt="">
-                                                    <div id="1" class="search__block ">
-                                                        <span></span>
-                                                        <input type="text" placeholder="Tìm kiếm .....">
-                                                    </div>
-                                                </div> -->
+                                                <div class="hotline__title"><span><a
+                                                            href="tel:+0932657979">0932657979</a></span></div>
                                             </div>
-                                        </li>
-                                        <li><a href="#">Trang Chủ</a></li>
-                                        <li><a href="#">Tổng Quan</a></li>
-                                        <li><a href="#">Vị Trí</a></li>
-                                        <li><a href="#">Phân Khu</a></li>
-                                        <li><a href="#">Sản Phẩm</a></li>
-                                    </ul>
+                                            <!-- <div class="right__img">
+                                                <a href="#"><img
+                                                        src="https://gemskyworld.vn/Data/Sites/1/skins/default/img/360-icon.png"
+                                                        alt=""></a>
+                                            </div> -->
+                                            <!-- <div class="search__wrapper search searchmb">
+                                                <img src="icon/search.svg" alt="">
+                                                <div id="1" class="search__block ">
+                                                    <span></span>
+                                                    <input type="text" placeholder="Tìm kiếm .....">
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </li>
+                                    <li><a href="#scrollspyHeading1">Trang Chủ</a></li>
+                                    <li><a href="#scrollspyHeading2">Tổng Quan</a></li>
+                                    <li><a href="#scrollspyHeading3">Vị Trí</a></li>
+                                    <li><a href="#scrollspyHeading4">Phân Khu</a></li>
+                                    <li><a href="#scrollspyHeading5">Sản Phẩm</a></li>
+                                </ul>
+                            </div>
+                            <div class="search__none abc">
+                                <div class="search__close">
+                                    <img width="20px" src="icon/multiply.svg" alt="">
                                 </div>
-                                <div class="search__none abc">
-                                    <div class="search__close">
-                                        <img width="20px" src="icon/multiply.svg" alt="">
-                                    </div>
-                                    <div class=" search__inputcl">
-                                        <input type="text" placeholder="Tìm Kiếm .....">
-                                    </div>
+                                <div class=" search__inputcl">
+                                    <input type="text" placeholder="Tìm Kiếm .....">
                                 </div>
                             </div>
-                            <div class="header__logo">
-                                <img src="https://gemskyworld.vn/Data/Sites/1/skins/default/img/logo.png" alt="">
+                        </div>
+                        <div class="header__left uk__flex ">
+                            <div class="uk__flex">
+                                <div class="header__logos">
+                                    <img src="images/logo_doc.svg" alt="">
+                                </div>
+                                <div class="header__logo">
+                                    <img class="ss" src="https://gemskyworld.vn/Data/Sites/1/skins/default/img/logo.png"
+                                        alt="">
+                                </div>
+
                             </div>
                         </div>
 
@@ -124,22 +160,27 @@
                             <div class="heder__nav-right">
                                 <ul>
                                     <li>
-                                        <a href="">
+                                        <a href="#scrollspyHeading1">
                                             Trang chủ
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="">
-                                            Ví trí
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
+                                        <a href="#scrollspyHeading2">
                                             Phân khu
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="">
+                                        <a href="#scrollspyHeading3">
+                                            Ví trí
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#scrollspyHeading4">
+                                            tiện ích
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#scrollspyHeading5">
                                             sản phẩm
                                         </a>
                                     </li>
@@ -170,19 +211,31 @@
                     <a href="https://www.facebook.com/alphaland.com.vn">
                         <li><img width="20px" src="icon/facebook-f.svg" alt=""></li>
                     </a>
+                    <a href="tel:+0932657979">
+                        <li><img width="20px" src="icon/phone.svg" alt=""></li>
+                    </a>
                     <a href="#">
                         <li><img width="20px" src="icon/angle-up.svg" alt=""></li>
                     </a>
                 </ul>
             </div>
-            <div class="slider">
+            <div id="scrollspyHeading1" class="slider">
                 <img class="slider__img" src="images/silder.png" alt="">
+                <div class="slider__posite-img">
+                    <img src="images/07.png" alt="">
+                </div>
                 <div class="slider__row">
                     <div class="slider__row-left bounce-in-top">
-                        <img src="images/01.png" alt="">
+                        <div class="slider__left-img">
+                            <img src="images/08.png" alt="">
+                        </div>
+                        <div class="right__button right__buttons">
+                            <button type="submit">
+                            </button>
+                        </div>
                     </div>
-                    <div class="slider__row-right">
-                        <img class="slider__row-img" src="./images/layer-12ss.png" alt="">
+                    <div class="slider__row-right slider__row-posite">
+                        <!-- <img class="slider__row-img" src="./images/layer-12ss.png" alt=""> -->
                         <div class="slider__row-rights">
                             <div class="slider__row-from">
                                 <img class="slider__row-rightimg" src="images/0111.png" alt="">
@@ -233,17 +286,17 @@
                             <a href="#">Xem Thêm</a>
                         </div>
                     </div>
-                    <div class="aos__img animate " data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <div class="aos__img animate " data-aos-anchor-placement="bottom-bottom">
                         <img src="https://gemskyworld.vn/Data/Sites/1/media/img/trang-chu/29.jpg" alt="">
                     </div>
-                    <div class="uk__flex section__row animate" data-aos="fade-up"
+                    <div id="scrollspyHeading2" class="uk__flex section__row animate "
                         data-aos-anchor-placement="bottom-bottom">
                         <div class="section__title">
-                            <h3>TẠI SAO CHỌN GEM SKY WORLD</h3>
-                            <h1>KIẾN TẠO KHÔNG GIAN XANH
+                            <h3 data-aos="fade-up">TẠI SAO CHỌN GEM SKY WORLD</h3>
+                            <h1 data-aos="fade-up">KIẾN TẠO KHÔNG GIAN XANH
                                 NÂNG NIU MÔI TRƯỜNG SỐNG</h1>
                         </div>
-                        <div class="section__desc section__desc1">
+                        <div data-aos="fade-up" class="section__desc section__desc1">
                             Sở hữu công viên trung tâm Sky Park cùng hệ thống 6 công viên nội khu hoành tráng, Gem Sky
                             World
                             mở ra một không gian sống ngập tràn sắc xanh, nơi con người và thiên nhiên giao hòa trong
@@ -329,7 +382,7 @@
                 <div class="aos__img">
                     <img src="https://gemskyworld.vn/Data/Sites/1/media/cac-cong-vien-gem-sky-world-2.jpg" alt="">
                 </div>
-                <div class="container">
+                <div id="scrollspyHeading3" class="container">
                     <div class="text__center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <h3>VỊ TRÍ</h3>
                         <h2>HUYẾT MẠCH GIAO THÔNG,</h2>
@@ -400,10 +453,10 @@
                         <button class="button__home">Khám Phá Thêm</button>
                     </div>
                 </div>
-                <div class="aos__img">
+                <div id="scrollspyHeading4" class="aos__img">
                     <img src="https://gemskyworld.vn/Data/Sites/1/media/location-done.jpg" alt="">
                 </div>
-                <div class="product">
+                <div id="scrollspyHeading5" class="product">
                     <div class="container">
                         <div class="product__title ">
                             <h3>Sản Phẩm</h3>
@@ -478,7 +531,7 @@
                     <h1>Đăng Ký Nhận THông TIn</h1>
                     <div class="footer__row">
                         <form name="register" action="javascript:void(0)" method="post" class="submit__form">
-                            <div class=" footer__input uk__flex ">
+                            <div class=" footer__input  ">
                                 <div class="form__input">
                                     <input type="text" name="fullname" placeholder="Họ Và Tên (*)" required />
                                 </div>
@@ -580,10 +633,20 @@
         });
     })
     $(document).ready(function () {
-        setTimeout(popup, 15000);
+        setTimeout(popup, 1500);
         function popup() {
             $(".logindiv").addClass('Form__blocks');
         }
+        $(".right__buttons").click(function () {
+            $('div').find('.slider__row-flex').addClass('slider__row-posites')
+            $('div').find('.slider__row-colors').addClass('slider__row-color')
+            $('div').find('.sss').removeClass('slider__row-colors')
+        })
+        $(".close").click(function () {
+            $('div').find('.slider__row-flex').removeClass('slider__row-posites')
+            $('div').find('.sss').addClass('slider__row-colors')
+        })
+
         $(".Form__close").click(function () {
             $('div').find('.Form__fex').removeClass('Form__blocks')
             $('div').find('.Form__fex').removeClass('Form__Block')
